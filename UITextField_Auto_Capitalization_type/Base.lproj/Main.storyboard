@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="UITextField_Auto_Capitalization_type" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="ALL LETTER IS UPPERCASE" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wtr-1W-Cjd">
+                                <rect key="frame" x="30" y="159" width="333" height="50"/>
+                                <color key="backgroundColor" systemColor="systemBrownColor"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="hlV-xO-V4E"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="25"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="all letter is lowercase" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="e5X-6I-cV3">
+                                <rect key="frame" x="30" y="259" width="333" height="50"/>
+                                <color key="backgroundColor" systemColor="systemBrownColor"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="25"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Capitalize word after end mark." textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gU4-KL-yiG">
+                                <rect key="frame" x="30" y="359" width="333" height="50"/>
+                                <color key="backgroundColor" systemColor="systemBrownColor"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="25"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Capitalize Word After Space" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AQl-QP-cNs">
+                                <rect key="frame" x="30" y="459" width="333" height="50"/>
+                                <color key="backgroundColor" systemColor="systemBrownColor"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="25"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="wtr-1W-Cjd" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="3Yj-u3-GsA"/>
+                            <constraint firstItem="e5X-6I-cV3" firstAttribute="height" secondItem="gU4-KL-yiG" secondAttribute="height" id="3wN-qa-c9Z"/>
+                            <constraint firstItem="gU4-KL-yiG" firstAttribute="top" secondItem="e5X-6I-cV3" secondAttribute="bottom" constant="50" id="783-Ef-es5"/>
+                            <constraint firstItem="gU4-KL-yiG" firstAttribute="trailing" secondItem="AQl-QP-cNs" secondAttribute="trailing" id="9k8-eH-28M"/>
+                            <constraint firstItem="gU4-KL-yiG" firstAttribute="height" secondItem="AQl-QP-cNs" secondAttribute="height" id="I1u-Hn-XVY"/>
+                            <constraint firstItem="gU4-KL-yiG" firstAttribute="leading" secondItem="AQl-QP-cNs" secondAttribute="leading" id="Jbe-nP-qeM"/>
+                            <constraint firstItem="e5X-6I-cV3" firstAttribute="top" secondItem="wtr-1W-Cjd" secondAttribute="bottom" constant="50" id="Qdv-EZ-HAe"/>
+                            <constraint firstItem="wtr-1W-Cjd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="V3l-mS-Tna"/>
+                            <constraint firstItem="e5X-6I-cV3" firstAttribute="trailing" secondItem="gU4-KL-yiG" secondAttribute="trailing" id="VTe-Eg-Ykj"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="wtr-1W-Cjd" secondAttribute="trailing" constant="30" id="W8e-oy-QOM"/>
+                            <constraint firstItem="wtr-1W-Cjd" firstAttribute="height" secondItem="e5X-6I-cV3" secondAttribute="height" id="c8t-8j-nNm"/>
+                            <constraint firstItem="wtr-1W-Cjd" firstAttribute="trailing" secondItem="e5X-6I-cV3" secondAttribute="trailing" id="qQi-ng-vK3"/>
+                            <constraint firstItem="AQl-QP-cNs" firstAttribute="top" secondItem="gU4-KL-yiG" secondAttribute="bottom" constant="50" id="t7R-kL-W7I"/>
+                            <constraint firstItem="e5X-6I-cV3" firstAttribute="leading" secondItem="gU4-KL-yiG" secondAttribute="leading" id="u51-tB-e6B"/>
+                            <constraint firstItem="wtr-1W-Cjd" firstAttribute="leading" secondItem="e5X-6I-cV3" secondAttribute="leading" id="vDk-h7-F9a"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="txtField1" destination="wtr-1W-Cjd" id="M42-7T-utd"/>
+                        <outlet property="txtField2" destination="e5X-6I-cV3" id="HVD-XL-zUy"/>
+                        <outlet property="txtField3" destination="gU4-KL-yiG" id="jfY-wi-Fh3"/>
+                        <outlet property="txtField4" destination="AQl-QP-cNs" id="YTC-ae-Vza"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131" y="-27"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBrownColor">
+            <color red="0.63529411764705879" green="0.51764705882352946" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
